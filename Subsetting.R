@@ -16,4 +16,4 @@ women[, 1]
 #Show the column of women titled "height"
 women[,"height"]
 
-#Get the 
+#Get the 2nd, 3rd and 7th rows
