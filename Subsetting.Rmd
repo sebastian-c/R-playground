@@ -1,0 +1,39 @@
+Subsetting
+========================================================
+
+**Some hints:**
+
+*Functions to look up (Technically,* `women` *is a default dataset in R)*
+```
+?seq
+?"["
+?women
+```
+```{r}
+seq(from=1, to=10, by=2)
+```
+```{r women-examples}
+#Show the dataframe `women` that comes with R
+women
+#Show the first row of women
+women[1, ]
+#Show the first column of women
+women[, 1]
+#Show the column of women titled "height"
+women[,"height"]
+#Get the 2nd, 3rd and 7th rows
+women[c(2,3,7),]
+#How many rows and columns does the data have?
+nrow(women)
+ncol(women)
+```
+
+<big>**Your mission**</big>
+Take this dataframe:
+```{r sample-data}
+dat <- data.frame(a=c(1,2,4,5,2), b=c(3,5,7,34,3), c=c(7,2,3,6,7))
+dat
+```
+And get every odd-numbered row of the third column:
+```{r subset-solution, echo=FALSE}
+dat[seq(1,nrow(dat),2), 3]
