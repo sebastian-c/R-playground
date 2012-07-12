@@ -182,7 +182,7 @@ hljs.initHighlightingOnLoad();
 <body>
 <h1>Subsetting</h1>
 
-<p><strong>Some hints:</strong></p>
+<p><big><strong>Some hints:</strong></big></p>
 
 <p><em>Functions to look up (Technically,</em> <code>women</code> <em>is a default dataset in R)</em></p>
 
@@ -191,7 +191,11 @@ hljs.initHighlightingOnLoad();
 ?women
 </code></pre>
 
-<pre><code class="r">seq(from = 1, to = 10, by = 2)
+<p><em>Code examples</em><br/>
+Note that this output has &#39;#&#39;es before it for ease of copying and pasting.</p>
+
+<pre><code class="r"># Generate sequence from 1 to 10 in steps of 2
+seq(from = 1, to = 10, by = 2)
 </code></pre>
 
 <pre><code>## [1] 1 3 5 7 9
@@ -262,6 +266,13 @@ nrow(women)
 </code></pre>
 
 <pre><code>## [1] 2
+</code></pre>
+
+<pre><code class="r"># Get the last row in the first column
+women[nrow(women), 1]
+</code></pre>
+
+<pre><code>## [1] 72
 </code></pre>
 
 <p><big><strong>Your mission</strong></big><br/>

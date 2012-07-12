@@ -1,7 +1,7 @@
 Subsetting
 ========================================================
 
-**Some hints:**
+<big>**Some hints:**</big>
 
 *Functions to look up (Technically,* `women` *is a default dataset in R)*
 ```
@@ -9,10 +9,11 @@ Subsetting
 ?"["
 ?women
 ```
-```{r}
-seq(from=1, to=10, by=2)
-```
+*Code examples*
+Note that this output has '#'es before it for ease of copying and pasting.
 ```{r women-examples}
+#Generate sequence from 1 to 10 in steps of 2
+seq(from=1, to=10, by=2)
 #Show the dataframe `women` that comes with R
 women
 #Show the first row of women
@@ -26,6 +27,8 @@ women[c(2,3,7),]
 #How many rows and columns does the data have?
 nrow(women)
 ncol(women)
+#Get the last row in the first column
+women[nrow(women),1]
 ```
 
 <big>**Your mission**</big>
