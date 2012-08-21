@@ -255,6 +255,25 @@ women[c(2, 3, 7), ]
 ## 7     64    132
 </code></pre>
 
+<pre><code class="r"># Show women without the 2nd, 3rd and 7th row.
+women[-c(2, 3, 7), ]
+</code></pre>
+
+<pre><code>##    height weight
+## 1      58    115
+## 4      61    123
+## 5      62    126
+## 6      63    129
+## 8      65    135
+## 9      66    139
+## 10     67    142
+## 11     68    146
+## 12     69    150
+## 13     70    154
+## 14     71    159
+## 15     72    164
+</code></pre>
+
 <pre><code class="r"># How many rows and columns does the data have?
 nrow(women)
 </code></pre>
@@ -278,8 +297,8 @@ women[nrow(women), 1]
 <p><big><strong>Your mission</strong></big><br/>
 Take this dataframe:</p>
 
-<pre><code class="r">dat &lt;- data.frame(a = c(1, 2, 4, 5, 2), b = c(3, 5, 7, 34, 3), c = c(7, 
-    2, 3, 6, 7))
+<pre><code class="r">dat &lt;- data.frame(a = c(1, 2, 4, 5, 2), b = c(3, 5, 7, 34, 3), c = c(7, 2, 3, 
+    6, 7))
 dat
 </code></pre>
 
