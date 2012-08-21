@@ -1,0 +1,35 @@
+For loops
+=========
+  
+You've probably come across a problem where you keep running th same code over an over again, changing only very slight thing each time (probably one number or one label). These problems can be overcome by the use of `for` loops.
+For-loops are not generally recommended in R (for reasons we'll discuss later. For-loops are, however, very powerful, low-level tools. A `for` loop simply repeats a block of code. Each repetition is slightly different which depends on the variable you are looping over.
+
+By convention, we call the looping variable i, but this can be any valid variable name in R. Let's start with a simple example:
+
+```{r first-loop}
+for(i in 1:3) print(i)
+```
+
+Hooray! Our first loop. So what did that do? The `for(i in 1:3)` starts the loop: anything after it is repeated for each element in the loop. There are 3 elements in `1:3` so the loop is repeated for each of those elements. The value of i changes each time and our loop prints its value for every value of i. Essentially, you could replicate this code by hand with the following code (note the curly braces which group lines of code together into blocks):
+
+```{r manual-loop}
+{print(1)
+print(2)
+print(3)}
+```
+
+But why just use numbers?
+
+```{r char-loop}
+for(i in c("apples", "oranges", "bananas")) print(i)
+```
+
+It's exactly the same thing. The loop goes through an element of i, performs the command, then moves onto the next one
+
+```{r assign-loop, echo=FALSE, eval=FALSE}
+names <- c("Fred", "Alice", "Bob")
+age <- c(34,23,45)
+for(i in 1:3){
+  assign(names[i], age[i])
+}
+```
